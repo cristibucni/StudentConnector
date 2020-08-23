@@ -1,0 +1,16 @@
+.checkbox {
+    transition-duration: 0.1s;
+    background: #AEB5BE;
+    width: 18px;
+    height: 18px;
+    float: right;
+    font-size: 14px;
+    text-align: center;
+    color: #AEB5BE;
+    user-select: none;
+}
+
+.checked {
+    background: #3A4856;
+    color: #fff;
+}

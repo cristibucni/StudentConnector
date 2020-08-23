@@ -1,0 +1,176 @@
+API Documentation
+
+GET api/profile/test - TEST API
+
+GET api/profile:
+
+Retrieves a JSON of this form representing the profile allocated to the current user
+
+{
+    "location": "",
+    "skills": [
+        "HTML",
+        "JS",
+        "CSS"
+    ],
+    "_id": "5d0fb36214de0e22a1e6b9e5",
+    "user": {
+        "_id": "5b1d6ce28bc9ff67f24dcb0a",
+        "name": "Robert Ardeleanu",
+        "avatar": "//www.gravatar.com/avatar/66aab349f36427faa65c430d7a1ebd4c?s=200&r=pg&d=mm"
+    },
+    "handle": "5b1d6ce28bc9ff67f24dcb0a",
+    "company": "TEST",
+    "education": [
+        {
+            "current": true,
+            "_id": "5d0fb40014de0e22a1e6b9e7",
+            "school": "Test exp title",
+            "degree": "Apple Test",
+            "fieldOfStudy": "Simleul Silvaniei",
+            "startTs": "2019-06-23T16:39:41.000Z",
+            "endTs": "2019-06-23T17:39:41.000Z",
+            "description": "COOL"
+        }
+    ],
+    "status": "Available",
+    "experience": [
+        {
+            "current": true,
+            "_id": "5d0fb3af14de0e22a1e6b9e6",
+            "title": "Test exp title",
+            "company": "Apple Test",
+            "location": "Simleul Silvaniei",
+            "startTs": "2019-06-23T16:39:41.000Z",
+            "endTs": "2019-06-23T17:39:41.000Z",
+            "description": "COOL"
+        }
+    ],
+    "date": "2019-06-23T17:14:10.438Z",
+    "__v": 2
+}
+
+GET api/profile/all - user must be admin to have access to it
+
+Retrieves a JSON of this form representing a list of all available profiles allocated to all the users
+
+[
+    {
+        "location": "",
+        "skills": [
+            "HTML",
+            "JS",
+            "CSS"
+        ],
+        "_id": "5d0fb36214de0e22a1e6b9e5",
+        "user": {
+            "_id": "5b1d6ce28bc9ff67f24dcb0a",
+            "name": "Robert Ardeleanu",
+            "avatar": "//www.gravatar.com/avatar/66aab349f36427faa65c430d7a1ebd4c?s=200&r=pg&d=mm"
+        },
+        "handle": "5b1d6ce28bc9ff67f24dcb0a",
+        "company": "TEST",
+        "education": [
+            {
+                "current": true,
+                "_id": "5d0fb40014de0e22a1e6b9e7",
+                "school": "Test exp title",
+                "degree": "Apple Test",
+                "fieldOfStudy": "Simleul Silvaniei",
+                "startTs": "2019-06-23T16:39:41.000Z",
+                "endTs": "2019-06-23T17:39:41.000Z",
+                "description": "COOL"
+            }
+        ],
+        "status": "Available",
+        "experience": [
+            {
+                "current": true,
+                "_id": "5d0fb3af14de0e22a1e6b9e6",
+                "title": "Test exp title",
+                "company": "Apple Test",
+                "location": "Simleul Silvaniei",
+                "startTs": "2019-06-23T16:39:41.000Z",
+                "endTs": "2019-06-23T17:39:41.000Z",
+                "description": "COOL"
+            }
+        ],
+        "date": "2019-06-23T17:14:10.438Z",
+        "__v": 2
+    }
+]
+
+POST api/profile - add or update an user profile
+
+Payload according to schema Profile.js
+
+{
+    user: ObjectId - required - e.g "user": "5b1d6ce28bc9ff67f24dcb0a",
+    handle: String - represents the id of a user - required - e.g "handle": "5b1d6ce28bc9ff67f24dcb0a",
+    company: String - not required - e.g "company": "TEST",
+    website: String - not required - e.g "www.test.com",
+    location: String - not required - e.g "Bucharest",
+    status: String - required - e.g "Available",
+    skills: String Array - required - e.g ["HTML", "JS", "CSS"]
+    bio: String - not required - e.g "Lorem ipsum...."
+    githubusername: String - not required - e.g "testGit"
+    experience: Array of experience objects - not required - e.g [
+        {
+            "title": "Test",
+            "company": "Apple",
+            "location": "Bucharest"
+            "startTs": Date
+            "endTs": Date,
+            "current": Boolean,
+            "description": "Lorem impsum...."
+        }
+    ]
+    education: Array of education objects - not required - e.g [
+        {
+            "school": "Test",
+            "degree": "Licence",
+            "fieldOfStudy": "Med"
+            "startTs": Date
+            "endTs": Date,
+            "current": Boolean,
+            "description": "Lorem impsum...."
+        }
+    ]
+    social: Object - not required - e.g {
+        "youtube": "www.youtube.com",
+        "twitter": "www.youtube.com",
+        "facebook": "www.youtube.com",
+        "instagram": "www.youtube.com",
+        "linkedin": "www.youtube.com",
+    }
+}
+
+POST api/profile/experience - add experience to an user profile
+
+Payload according to schema Profile.js - experience
+
+experience: Array of experience objects - not required - e.g
+{
+            "title": "Test",
+            "company": "Apple",
+            "location": "Bucharest"
+            "startTs": Date
+            "endTs": Date,
+            "current": Boolean,
+            "description": "Lorem impsum...."
+}
+
+
+POST api/profile/education - add education to an user profile
+
+education: Array of education objects - not required - e.g
+{
+            "school": "Test",
+            "degree": "Licence",
+            "fieldOfStudy": "Med"
+            "startTs": Date
+            "endTs": Date,
+            "current": Boolean,
+            "description": "Lorem impsum...."
+}
+

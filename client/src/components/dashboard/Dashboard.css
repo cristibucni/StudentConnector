@@ -1,0 +1,76 @@
+.schedule-day {
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    background-color: rgb(4, 137, 168);
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.schedule-item {
+    border-bottom: 2px solid rgb(4, 137, 168);
+}
+
+.schedule-item-time {
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.category-card-body {
+    width: 90%;
+    padding: 8px;
+    margin: auto;
+    color: #1b1b1f;
+}
+
+.create-schedule-day {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    border-top: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-transform: uppercase;
+}
+
+.schedule-add-item:hover {
+    color: #e74c3c;
+    transition: 0.2s;
+}
+
+.schedule-add-item {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.schedule-add-item:focus {
+    outline: 0;
+}
+
+.schedule-error-message {
+    color: #dc3545;
+}
+
+.row-schedule {
+    -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.col-schedule {
+    margin-top: 4px;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.schedule-content {
+    padding: 8px;
+    margin-top: -6px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

@@ -1,0 +1,312 @@
+/* TODO: migrate to SCSS */
+
+.create-quiz-container {
+    min-height: 740px;
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    -webkit-animation: fade-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.submit {
+    width: 40%;
+    margin: auto;
+}
+
+.section {
+    padding: 16px;
+}
+
+.dropdown {
+    width: 100%;
+    height: 38px;
+}
+
+.category {
+    width: 95%;
+    margin: auto;
+    border: 1px solid #1b1b1f;
+    height: 144px;
+    margin-top: 8px;
+}
+
+.category-card {
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.category-card:not(:first-child) {
+    margin-top: 12px;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-25px);
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.category-card-header {
+    width: 90%;
+    padding: 8px;
+    margin: auto;
+    color: #1b1b1f;
+}
+
+.category-card-body {
+    width: 90%;
+    padding: 8px;
+    margin: auto;
+    color: #1b1b1f;
+}
+
+.category-name {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.questions {
+    float: right;
+    width: 40%;
+    padding: 4px;
+    display: inline-block;
+}
+
+.add {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.add:focus {
+    outline: 0;
+}
+
+.add-category-button {
+    background-color: #fff;
+    border: none;
+    color: #3a4856;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #3a4856;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 #3a4856, 0 1px 3px 0 #3a4856;
+}
+
+.add-category-button:hover {
+    background-color: #3a4856;
+    color: white;
+    text-decoration: none;
+}
+
+.add-category-button:focus {
+    outline: 0;
+}
+
+.correct-answer-selector {
+    background-color: #faf8ff;
+    -webkit-animation: fade-in 0.15s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 0.15s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    cursor: pointer;
+}
+
+.correct-answer-selector-text {
+    margin-top: 0;
+    display: inline-block;
+    text-align: left;
+    padding-left: 4px;
+    width: 100%;
+    color: #3a4856;
+    text-transform: uppercase;
+    font-size: 1.2vh;
+    letter-spacing: 1px;
+    width: 85%;
+}
+
+.correct-answer-selector-input {
+    width: 15%;
+    display: inline-block;
+    text-align: right;
+    cursor: pointer;
+}
+
+.correct-answer-selector-radio-checkbox {
+    cursor: pointer;
+}
+
+.add-question-container {
+    width: 100%;
+    margin: auto;
+    min-width: 420px;
+}
+
+.dropdown-select {
+    width: 100%;
+    float: right;
+    padding: 8px;
+    margin-top: -5px;
+    border-radius: 5px;
+    border: 0;
+    background: transparent no-repeat;
+    background-image: linear-gradient(to bottom, #4d90fe, #4d90fe), linear-gradient(to bottom, silver, silver);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.dropdown-select:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+}
+
+.errors {
+    color: #dc3545;
+    font-size: 14px;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    margin: auto;
+    margin-top: -10px;
+    height: 36px;
+    border: 0;
+    display: inline-block;
+    padding: 10px 5px;
+    background: transparent no-repeat;
+    background-image: linear-gradient(to bottom, #4d90fe, #4d90fe), linear-gradient(to bottom, silver, silver);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.input:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+}
+
+.answer-option {
+    transition: 0.2s;
+    width: 100%;
+    height: 32px;
+    padding: 4px;
+    padding-bottom: 0;
+    display: block;
+    border: 0;
+    background: white no-repeat;
+    background-image: linear-gradient(to bottom, #4d90fe, #4d90fe), linear-gradient(to bottom, silver, silver);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.answer-option:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+}
+
+.invalid {
+    background: white no-repeat;
+    background-size: 100% 2px, 100% 1px;
+    background-image: linear-gradient(to bottom, #dc3545, #dc3545), linear-gradient(to bottom, silver, silver);
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.invalid:focus {
+    background-image: linear-gradient(to bottom, #4d90fe, #4d90fe), linear-gradient(to bottom, silver, silver);
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+}
+
+.delete-category-button {
+    transition-duration: 0.2s;
+    float: right;
+    background: transparent;
+    border: 0px;
+    color: #3a4856;
+    font-size: 20px;
+    height: 35px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 35px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 2em;
+}
+
+.delete-category-button:hover {
+    color: #4d90fe;
+}
+
+.delete-category-button:focus {
+    outline: 0;
+}
+
+.date-input {
+    width: 100%;
+    height: 36px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent no-repeat;
+    background-image: linear-gradient(to bottom, #4d90fe, #4d90fe), linear-gradient(to bottom, silver, silver);
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+
+.date-input:focus {
+    background-size: 100% 2px, 100% 1px;
+    outline: none;
+}

@@ -1,0 +1,251 @@
+.projects-ul {
+    list-style-type: none;
+}
+
+.additional-info-title {
+    list-style-type: none;
+    padding-left: 24px;
+}
+
+.additional-info-content {
+    padding-left: 32px;
+}
+
+.pointer {
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: 2px solid #fdfdfd;
+}
+.pointer:hover {
+    border-bottom: 2px solid #e74c3c;
+}
+.pointer-active {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #e74c3c;
+}
+.subCategories {
+    padding-left: 30px;
+}
+
+.li-item {
+    padding-left: 24px;
+    list-style-type: square;
+}
+
+.experience {
+    padding-left: 24px;
+}
+
+.nav-button {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #fdfdfd;
+    padding: 8px 16px;
+    color: #3d3a40;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid #3d3a40;
+    color: #3d3a40;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.nav-button-active {
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #e74c3c;
+    padding: 8px 16px;
+    color: #3d3a40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-button-active:hover {
+    border-bottom: 2px solid #3d3a40;
+}
+
+.nav-button-active:focus {
+    outline: none;
+}
+
+.col-md-auto {
+    padding-bottom: 16px;
+}
+.li-item-parent {
+    padding-left: 16px;
+}
+
+.deleteButton {
+    transition-duration: 0.4s;
+    float: right;
+    background: transparent;
+    border: 2px solid #3d3a40;
+    border-radius: 2em;
+    color: #3d3a40;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+.edit-field {
+    width: 100%;
+    padding: 8px;
+}
+
+.editButton {
+    transition-duration: 0.4s;
+    float: right;
+    background: transparent;
+    border: 2px solid #3d3a40;
+    border-radius: 2em;
+    color: #3d3a40;
+    font-size: 12px;
+    height: 20px;
+    line-height: 2px;
+    margin: 0 5px 8px;
+    padding: 0;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+.edit-delete-icons {
+    float: right;
+}
+
+.project-container {
+    display: block;
+    margin-top: 16px;
+    padding-left: 8px;
+}
+
+.general-info {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #fdfdfd;
+    font-size: 18px;
+}
+
+.ul-general-info {
+    list-style: none;
+    padding-left: 0;
+}
+
+.item-general-info {
+    display: inline-block;
+    padding: 0;
+    font-weight: bold;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+}
+
+.modal-title-span {
+    display: inline-block;
+}
+
+.modal-content {
+    padding-top: 8px;
+    border: 0;
+}
+
+.profile-avatar {
+    border-radius: 75px;
+}
+
+.profile-user-name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.profile-user-job {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0589a8;
+}
+
+.profile-right-widget {
+    font-size: 1.25rem;
+    text-align: right;
+}
+
+.profile-right-icons {
+    text-align: center;
+    margin-left: -15px;
+}
+
+.profile-description {
+    font-size: 1.25rem;
+}
+
+.profile-heading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #0589a8;
+    margin-bottom: 6px;
+}
+
+.profile-education {
+    padding-left: 8px;
+    border-left: 5px solid rgb(4, 137, 168);
+    border-top-left-radius: 3px;
+}
+
+.profile-skill {
+    display: inline-block;
+    border: 2px solid rgb(4, 137, 168);
+    padding: 8px;
+    list-style-type: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-skills-ul {
+    padding-left: 0;
+}
+
+.profile-skill:not(:first-child) {
+    margin-left: 10px;
+}
+
+.project-additional-data {
+    -webkit-animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-top 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    transition: 0.3s;
+    padding-left: 32px;
+}

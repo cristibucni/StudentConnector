@@ -1,0 +1,185 @@
+API Documentation
+
+GET api/projects/test - TEST API
+
+GET api/projects:  - PRIVATE
+
+Retrieves a JSON of this form, representing a list of projects which are assigned (created by or as a member of the current user)
+
+[
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0ce1c8e3693c3464207feb",
+        "name": "Cisco",
+        "createdAt": "2019-06-21T13:55:20.909Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0ce3aa9c25ef3a8df9ff1f",
+        "name": "Fitness",
+        "createdAt": "2019-06-21T14:03:22.502Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [
+            "Catalin",
+            "Robert Ardeleanu"
+        ],
+        "_id": "5d0cf06c3d0f6063aeeba03f",
+        "name": "Time Tracking",
+        "createdAt": "2019-06-21T14:57:48.134Z",
+        "createdBy": "Gigi Kent",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0d04fdb7aca720b9bc06e0",
+        "name": "Test",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:25:13.392Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0d06a4da5c3927ce96f5f4",
+        "name": "Test1",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:32:36.809Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    }
+]
+
+GET api/projects/all - PUBLIC
+
+Retrieves a JSON of this form, representing a list of all the projects within the app, regardless of the user
+
+[
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0ce1c8e3693c3464207feb",
+        "name": "Cisco",
+        "createdAt": "2019-06-21T13:55:20.909Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0ce3aa9c25ef3a8df9ff1f",
+        "name": "Fitness",
+        "createdAt": "2019-06-21T14:03:22.502Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [
+            "Catalin",
+            "Robert Ardeleanu"
+        ],
+        "_id": "5d0cf06c3d0f6063aeeba03f",
+        "name": "Time Tracking",
+        "createdAt": "2019-06-21T14:57:48.134Z",
+        "createdBy": "Gigi Kent",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0cf4975ee89c71943e88ac",
+        "name": "World Class",
+        "createdAt": "2019-06-21T15:15:35.991Z",
+        "createdBy": "Titi Aur",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0d04fdb7aca720b9bc06e0",
+        "name": "Test",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:25:13.392Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0d06a4da5c3927ce96f5f4",
+        "name": "Test1",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:32:36.809Z",
+        "createdBy": "Robert Ardeleanu",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [],
+        "_id": "5d0d08488ec72a2dfdb90a96",
+        "name": "Test2",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:39:36.274Z",
+        "createdBy": "Test2",
+        "__v": 0
+    },
+    {
+        "technologyStack": [],
+        "members": [
+            "Daniel",
+            "Titi",
+            "Robert"
+        ],
+        "_id": "5d0d08b0a770002eec7ef4f5",
+        "name": "Test3",
+        "deadline": "1995-12-17T03:24:00.000Z",
+        "createdAt": "2019-06-21T16:41:20.086Z",
+        "createdBy": "Test 3",
+        "__v": 0
+    }
+]
+
+GET api/projects/:project_id - PUBLIC  * for now
+
+Retrieves a single project upon id
+
+{
+    "technologyStack": [
+        "JS",
+        "NodeJs"
+    ],
+    "members": [
+        "ASD",
+        "TITI",
+        "GETA"
+    ],
+    "_id": "5d1488d0be0fb5157898d0e6",
+    "name": "ASD",
+    "createdAt": "2019-06-27T09:13:52.095Z",
+    "createdBy": "Robert Ardeleanu",
+    "__v": 0
+}
+
+POST api/projects          * once created, you cannot modify it
+
+{
+	"name": "ASD",                                     - String, required
+	"technologyStack": ["JS", "NodeJs"],               - Array of strings, not required
+	"members": ["ASD", "TITI", "GETA"]                 - Array of strings, not required
+	"description": "Lorem ipsum..."                    - String, not required
+	"deadline": "Sun blabla "                          - Date, not required
+}
+
+
+
+
